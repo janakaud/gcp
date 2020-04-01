@@ -1,0 +1,104 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "60e023b4-7fdb-4379-ac70-f2339676ff0e": {
+        "id": "60e023b4-7fdb-4379-ac70-f2339676ff0e",
+        "parent": null,
+        "name": "gcp.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "gcp.js",
+        "cursor": {
+          "lineNumber": 3,
+          "column": 2
+        },
+        "config": {
+          "runtime": "nodejs8",
+          "timeout": 60,
+          "memory": 128,
+          "triggerType": 0,
+          "name": "gcp",
+          "handler": "handler"
+        },
+        "triggers": [
+          {
+            "resourceName": "http-trigger",
+            "config": {}
+          }
+        ]
+      },
+      "e5dd87d1-2825-4d47-8342-e555b6d1f568": {
+        "id": "e5dd87d1-2825-4d47-8342-e555b6d1f568",
+        "parent": null,
+        "name": "index.js",
+        "type": "JS_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "index.js"
+      },
+      "bb6eeb52-bfe1-489a-a9a7-9327caf58ca4": {
+        "id": "bb6eeb52-bfe1-489a-a9a7-9327caf58ca4",
+        "parent": null,
+        "name": "main.py",
+        "type": "PYTHON_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": false,
+        "filePath": "main.py"
+      }
+    },
+    "openFiles": [
+      "60e023b4-7fdb-4379-ac70-f2339676ff0e"
+    ],
+    "currentFileId": "60e023b4-7fdb-4379-ac70-f2339676ff0e",
+    "resources": {
+      "http-trigger": {
+        "name": "http-trigger",
+        "type": "http-trigger",
+        "config": {}
+      }
+    },
+    "customTemplate": {
+      "dialect": "Deployment Manager",
+      "definitions": {
+        "resources": [
+          {
+            "name": "gcp",
+            "type": "cloudfunctions.v1beta2.function",
+            "properties": {
+              "location": "us-east1",
+              "function": "gcp",
+              "entryPoint": "gcp",
+              "timeout": "120s"
+            }
+          }
+        ]
+      },
+      "overrideDefault": true
+    },
+    "envVariables": [],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "gcp",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east1",
+    "platform": "GCP",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1585716489980
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "gcp",
+      "url": "https://github.com/janakaud/gcp"
+    }
+  }
+}
